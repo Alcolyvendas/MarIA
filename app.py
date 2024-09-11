@@ -29,18 +29,10 @@ from nltk.stem.porter import PorterStemmer
 
 cl.instrument_openai()
 
-
-
-#cl.config.model_name = "gpt-4o-mini"
-#cl.config.model_endpoint = "https://mariametocalospies.openai.azure.com/v1/engines/gpt-4o-mini/completions"
-
 client = AsyncAzureOpenAI()
-
 
 # marIA. Datos de entrada, para encodear/decodear -----------------------------------------------
 # Estos datos de entrada tiene que venir encodeados previamente(Susana), para que se pueda utilizar en la aplicación
-
-
 
 def cargar_pkls():
     # Cargar el DataFrame resultante desde el archivo pickle
