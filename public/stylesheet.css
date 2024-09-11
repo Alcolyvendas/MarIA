@@ -1,0 +1,9 @@
+.MuiAvatar-img {
+	max-height:50px !important;
+}
+
+div.MuiAvatar-root img, 
+div.MuiAvatar-root > img, 
+#header img {
+	max-height: 50px !important;
+}
