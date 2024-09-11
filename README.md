@@ -1,8 +1,3 @@
-# MarIA
-
-Aquí tienes un ejemplo de un `README.md` para tu proyecto, basado en el contenido de tu archivo `app.py`:
-
-```markdown
 # Fashion Recommendation Chatbot using Azure OpenAI and Chainlit
 
 This project implements a personalized fashion recommendation chatbot, **MarIA**, using Azure OpenAI, Chainlit, and various recommendation algorithms. The bot helps users find clothing items that fit their style and preferences by providing suggestions based on user queries. It supports streaming responses and utilizes Azure OpenAI's function calling to fetch fashion recommendations.
@@ -139,5 +134,3 @@ The project uses a custom graph-based recommender, **RP3betaRecommender**, to ge
 
 - **Modifying Recommendations**: To adjust the recommendation logic, you can modify the `get_fashion_recommendation` and `compute_query_similarity` functions.
 - **Adding New Functions**: You can add new functions in the `app.py` or `app_speech.py` to handle other types of user queries or interactions.
-
-```
