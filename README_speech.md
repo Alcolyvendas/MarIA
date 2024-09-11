@@ -66,8 +66,7 @@ Interacción:
 Consideraciones Adicionales 
       - Probar el Audio: Verifica que el micrófono y los altavoces funcionen correctamente en el dispositivo donde se ejecuta la aplicación. 
       - Gestionar adecuadamente los posibles errores: Implementa manejo de errores adecuado para casos en los que la entrada de voz no se reconozca o la síntesis de voz falle. 
-      - Optimización fina: Para ajustar la configuración de las funciones de voz para mejorar la calidad y precisión del reconocimiento y la síntesis de voz.
-
+      - Optimización fina: Para ajustar la configuración de las funciones de voz para mejorar la calidad y precisión del reconocimiento y la síntesis de voz. En la carpeta /.chainlit fichero config.toml está la configuración por defecto (ver documentación de CHAINLIT, para un detalle fino) https://docs.chainlit.io/get-started/overview
 
 ---
 
