@@ -726,7 +726,8 @@ def set_audio_buffer(buffer):
     global audio_buffer
     audio_buffer = buffer
 
-
+# Para ir acumulando, 'trozos' de audio, hasta que la entrada de audio finalice por aprte del usuario ... on_audio_end
+# Y ahí se procesa propiamente el audio completo.
 @cl.on_audio_chunk
 async def on_audio_chunk(audio_chunk: cl.AudioChunk):
     try:
