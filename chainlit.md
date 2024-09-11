@@ -1,4 +1,4 @@
-# Streaming chatbot with Azure OpenAI functions.
+# Streaming chatbot with Azure OpenAI functions
 
 This chatbot utilizes OpenAI's function calling feature to invoke appropriate functions based on user input and stream the response back.
 
@@ -9,7 +9,7 @@ On top of the standard chat interface, the UI exposes the particular function ca
   - Any change could be done in `app.py` or `app_speech.py`
 
 
-# Chatbot con funciones de Azure OpenAI.
+# Chatbot con funciones de Azure OpenAI
 
 Este chatbot utiliza la función de llamadas de OpenAI para invocar consultas basadas en la entrada del usuario y transmitir la respuesta de vuelta.
 
