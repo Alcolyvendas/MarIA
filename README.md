@@ -1,6 +1,6 @@
 # Fashion Recommendation Chatbot using Azure OpenAI and Chainlit
 
-This project implements a personalized fashion recommendation chatbot, **MarIA**, using Azure OpenAI, Chainlit, and various recommendation algorithms. The bot helps users find clothing items that fit their style and preferences by providing suggestions based on user queries. It supports streaming responses and utilizes Azure OpenAI's function calling to fetch fashion recommendations.
+This project implements a personalized fashion recommendation chatbot, **MarIA**, using Azure OpenAI, Chainlit, and various popular recommendation algorithms. The bot helps users find clothing items that fit their style and preferences by providing suggestions based on user queries. It supports streaming responses and utilizes Azure OpenAI's function calling to fetch fashion recommendations.
 
 ## Features
 
