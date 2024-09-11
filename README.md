@@ -1,3 +1,143 @@
+# Chatbot de Recomendaciones de Moda usando Azure OpenAI y Chainlit
+
+Este proyecto implementa un chatbot de recomendaciones de moda personalizado, **MarIA**, utilizando Azure OpenAI, Chainlit y varios algoritmos de recomendación populares. El bot ayuda a los usuarios a encontrar artículos de ropa que se ajusten a su estilo y preferencias al proporcionar sugerencias basadas en las consultas de los usuarios. Soporta respuestas en streaming y utiliza la función de llamada de Azure OpenAI para obtener recomendaciones de moda.
+
+## Características
+
+- **Recomendaciones de Moda Personalizadas**: El chatbot analiza las consultas de los usuarios y proporciona recomendaciones de moda.
+- **Recomendaciones Basadas en Sesiones**: Las consultas se acumulan dentro de una sesión para refinar el proceso de recomendación.
+- **Llamadas a Funciones con Azure OpenAI**: El bot utiliza el mecanismo de llamada a funciones de OpenAI para obtener recomendaciones de moda.
+- **Respuestas en Streaming**: El chatbot transmite sus respuestas en tiempo real.
+- **Integración con Sistema de Recomendación Personalizado**: El chatbot interactúa con un motor de recomendación de moda personalizado que utiliza datos pre-codificados y similitud coseno.
+- **Procesamiento de Audio**: La aplicación soporta el procesamiento de audio para la expansión en reconocimiento de voz (versión app_speech.py).
+
+## Tecnologías
+
+- **Python**: Lenguaje principal para la aplicación.
+- **Chainlit**: Utilizado para crear la interfaz interactiva del chatbot.
+- **Azure OpenAI**: Proporciona las capacidades de procesamiento del lenguaje natural y llamadas a funciones.
+- **Pandas**: Para la manipulación y preprocesamiento de datos.
+- **Scikit-learn**: Utilizado para calcular la similitud coseno entre consultas y artículos.
+- **NLTK**: Toolkit de procesamiento de lenguaje natural para el preprocesamiento de texto.
+- **Pickle**: Para cargar modelos y datos preprocesados.
+
+## Instalación
+
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/Alcolyvendas/fashion-recommendation-chatbot.git
+   cd fashion-recommendation-chatbot
+   ```
+
+2. **Instalar dependencias**:
+   Asegúrate de tener Python 3.8 o superior instalado. Ejecuta el siguiente comando para instalar las bibliotecas necesarias:
+   ```bash
+   pip install -r requirements.txt o pip install -r requirements_speech.txt
+   ```
+
+3. **Configurar Azure OpenAI**:
+   Necesitarás tus credenciales de Azure OpenAI para conectarte al servicio. Configura las variables de entorno necesarias o agrégalas a un archivo `.env`:
+   - `AZURE_OPENAI_API_KEY`
+   - `AZURE_OPENAI_ENDPOINT`
+   - `AZURE_OPENAI_DEPLOYMENT_ID`
+     
+   (versión app_speech.py, igualmente necesitarás las credenciales del servicio Azure Speech)
+   - `AZURE_SPEECH_KEY`
+   - `AZURE_SPEECH_REGION`
+   - `AZURE_SPEECH_ENDPOINT`     
+
+4. **Asegúrate de que FFmpeg esté instalado**:
+   Si se requiere procesamiento de audio, instala FFmpeg y asegúrate de que esté disponible en el PATH de tu sistema, el chainlit através del micrófono captura el audio en formato `ogg`, pero Azure, no lo admite, así pues hay que convertirlo a formato `wav`.
+
+## Uso
+
+1. **Ejecutar el chatbot**:
+   Usa el siguiente comando para iniciar el chatbot:
+   ```bash
+   chainlit run app.py -w o chainlit run app_speech.py -w
+   ```
+
+2. **Interactuar con el bot**:
+   Abre la interfaz de Chainlit y comienza a interactuar con **MarIA**, tu asistente de moda. Puedes pedir recomendaciones de moda escribiendo consultas como:
+   - "Necesito un vestido para una boda."
+   - "¿Qué debería usar para una reunión de negocios?"
+
+   El chatbot responderá con recomendaciones personalizadas basadas en las consultas de tu sesión.
+
+## Funciones Principales
+   A continuación, te doy una breve explicación que describe el propósito de cada función y cómo se integran en el flujo de trabajo general del sistema.
+
+- **`get_fashion_recommendation`**: Esta función principal que procesa las consultas de la sesión de un usuario, para devolver recomendaciones de moda personalizadas y obtiene recomendaciones de moda basadas en ellas.
+    - **Parámetros**:
+      - `yourQuery`: la consulta ingresada por el usuario.
+      
+    - **Proceso**:
+      - Utiliza `encoding2recomender` para generar una lista de artículos candidatos basados en la consulta.
+      - Compara los candidatos generados con los artículos ya presentes en la sesión actual.
+      - Si se encuentra un nuevo candidato, se agrega a la sesión.
+      - Si se agrega un nuevo artículo a la sesión, el sistema usa `recommend2me` para generar recomendaciones finales y las decodifica con `decoding2chat`.
+      - Si no se encuentran nuevos candidatos, devuelve un mensaje indicando que no se pudieron hacer recomendaciones basadas en la información proporcionada.
+    
+    - **Salida**: Un JSON con las recomendaciones decodificadas o un mensaje de error si no se encontraron recomendaciones.
+  
+- **`encoding2recomender`**: Codifica la nueva consulta para la sesión, genera artículos candidatos para el recomendador basados en la nueva consulta obtenida.
+    - **Parámetros**:
+      - `yourQuery`: la consulta del usuario, que se transforma en una matriz dispersa para calcular su similitud con los artículos disponibles.
+      - `session_id`: un identificador para la sesión actual (predeterminado es 1).
+      
+    - **Proceso**:
+      - Calcula la similitud entre la consulta y los artículos disponibles usando `compute_query_similarity`.
+      - Extrae los artículos más relevantes usando `get_top_items`.
+      - Devuelve un DataFrame con los artículos candidatos, incluyendo `session_id` y la `fecha` de la recomendación.
+      
+    - **Salida**: Un `DataFrame` que contiene las columnas `session_id`, `item_id` y `date`.
+
+- **`compute_query_similarity`**: Calcula la similitud entre consultas de usuarios y descripciones de artículos almacenados utilizando similitud coseno para obtener los artículos candidatos vistos para `get_fashion_recommendation`.
+
+- **`decoding2chat`**: Toma las predicciones del modelo y añade las descripciones de esos artículos, haciéndolos más comprensibles en una interfaz de chat, decodifica los artículos recomendados para devolverlos en un formato amigable para el usuario en el chat.
+    - **Parámetros**:
+      - `prediccion_df`: lista resultado con las columnas `session_id`, `item_id` y `rank`, representando los artículos recomendados.
+      
+    - **Proceso**:
+      - Añade una columna `item_descrip` a la lista resultado usando la función `obtener_descripcion`, mapeando el `item_id` a su descripción.
+      - Devuelve la lista con las descripciones agrupadas por la sesión.
+    
+    - **Salida**: Lista de descripciones de los artículos recomendados.
+  
+- **`call_gpt4`**: Maneja la comunicación con el modelo Azure OpenAI para procesar la entrada del usuario y generar respuestas.
+  
+- **`recommend2me`**: Realiza el proceso de recomendación en sí, utilizando el modelo `RP3betaRecommender`.
+
+    - **Parámetros**:
+      - `test_sessions_df`: Lista de todas las interacciones de la sesión actual.
+    
+    - **Proceso**:
+      - Carga el modelo de recomendación preentrenado desde un archivo `PKL`.
+      - Prepara los datos de entrada creando matrices dispersas (`csr_matrix`) y mapeos entre sesiones y artículos.
+      - Usa el `RP3betaRecommender` para predecir los artículos más relevantes.
+      - Devuelve una lista con las predicciones de los artículos recomendados.
+    
+    - **Salida**: Listade de los artículos recomendados por el modelo.
+
+---
+
+Cada vez que un usuario hace una consulta, éstas se acumulan dentro de la misma sesión, permitiendo que se pasen juntas al recomendador cuando se hace una nueva consulta. El sistema asegura que solo se agreguen nuevos artículos a la sesión, evitando recomendaciones duplicadas. Aunque esto se controla dentro del sistema, también está controlado explícitamente por un parámetro de configuración en el algoritmo de recomendación elegido.
+
+El sistema está optimizado para ofrecer recomendaciones de moda, pero puede ser **mejorado** ajustando los datos de entrada y el modelo de recomendación. De hecho, debido a su estrategia modular, el algoritmo actual podría ser reemplazado por uno mejor o más óptimo.
+
+---
+
+## Recomendador Personalizado
+
+El proyecto utiliza un recomendador basado en grafos personalizado, **RP3betaRecommender**, para generar recomendaciones de moda basadas en datos de artículos preprocesados. Puedes actualizar la lógica del recomendador modificando los archivos `app.py` o `app_speech.py`.
+
+## Personalización
+
+- **Modificar Recomendaciones**: Para ajustar la lógica de recomendación, puedes modificar las funciones `get_fashion_recommendation` y `compute_query_similarity`.
+- **Añadir Nuevas Funciones**: Puedes añadir nuevas funciones en `app.py` o `app_speech.py` para manejar otros tipos de consultas o interacciones de los usuarios.
+
+---
+
 # Fashion Recommendation Chatbot using Azure OpenAI and Chainlit
 
 This project implements a personalized fashion recommendation chatbot, **MarIA**, using Azure OpenAI, Chainlit, and various popular recommendation algorithms. The bot helps users find clothing items that fit their style and preferences by providing suggestions based on user queries. It supports streaming responses and utilizes Azure OpenAI's function calling to fetch fashion recommendations.
