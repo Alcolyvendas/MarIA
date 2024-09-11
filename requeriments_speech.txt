@@ -10,3 +10,4 @@ nltk
 azure-cognitiveservices-speech==1.21.0
 pydub==0.25.1
 ffmpeg-python==0.2.0
+pandas==2.1.0
