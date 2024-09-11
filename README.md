@@ -130,7 +130,7 @@ The system is optimized for offering fashion recommendations but can be **improv
 
 ## Custom Recommender
 
-The project uses a custom graph-based recommender, **RP3betaRecommender**, to generate fashion recommendations based on preprocessed item data. You can update the recommender logic by modifying the `app.py` file or the utility functions in `Pipeline.utils`.
+The project uses a custom graph-based recommender, **RP3betaRecommender**, to generate fashion recommendations based on preprocessed item data. You can update the recommender logic by modifying the `app.py` or `app_speech.py` files.
 
 ## Customization
 
