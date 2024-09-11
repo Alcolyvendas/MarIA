@@ -549,6 +549,7 @@ async def on_chat_start():
         [{"role": "assistant", "content": SYSTEM_PROMPT}],
     )
     init_message = "¡Hola! Soy MarIA, tu asistente de compras especializada en moda y accesorios. Voy a asistirte para ayudarte a encontrar la prenda perfecta."
+    # Presentación inicial
     await synthesize_speech(init_message)
     await cl.Message(content=init_message).send()
 
