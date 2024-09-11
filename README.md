@@ -40,6 +40,7 @@ This project implements a personalized fashion recommendation chatbot, **MarIA**
    - `AZURE_OPENAI_API_KEY`
    - `AZURE_OPENAI_ENDPOINT`
    - `AZURE_OPENAI_DEPLOYMENT_ID`
+   (version app_speech.py)
    - `AZURE_SPEECH_KEY`
    - `AZURE_SPEECH_REGION`
    - `AZURE_SPEECH_ENDPOINT`     
