@@ -1,0 +1,9 @@
+chainlit==1.1.402
+openai==1.40.6
+python-dotenv==1.0.0
+Requests==2.31.0
+numpy
+scipy
+tqdm
+scikit-learn
+nltk
