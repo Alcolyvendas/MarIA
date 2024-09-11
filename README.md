@@ -123,7 +123,7 @@ This project implements a personalized fashion recommendation chatbot, **MarIA**
 
 Each time a user makes a query, the queries can be accumulated within the same session, allowing them to be passed together to the recommender when a new query is made. The system ensures that only new items are added to the session, avoiding duplicate recommendations. Although this is controlled within the system, it is also explicitly controlled by a configuration parameter in the chosen recommendation algorithm.
 
-The system is optimized for offering fashion recommendations but can be adapted to other domains by adjusting the input data and the recommendation model. In fact, due to its modular strategy, the current algorithm could be replaced by a better or more optimal one.
+The system is optimized for offering fashion recommendations but can be **improved** by adjusting the input data and the recommendation model. In fact, due to its modular strategy, the current algorithm could be replaced by a better or more optimal one..
 
 --- 
 
