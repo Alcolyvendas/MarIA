@@ -1,0 +1,190 @@
+{  "materiales": [
+      "Algodón", "Seda", "Denim", "Cuero", "Terciopelo", "Lycra", "Lana", "Nylon", "Lino", "Viscosa","Fibra de carbono", 
+      "Poliéster","Piel sintética",  "Plástico", "Plata", "Oro","Acero inoxidable","PVC"
+  ],
+  "talla": ["M", "S", "XS", "L", "XL","XXL", "XXS", "Unitalla", "XXXL","XXXXL","XXXXXL","0XL","1XL","2XL","3XL","4XL","5XL","US2","US4","US6","US8","US10","US12","US14"],
+  "productos": ["Camiseta", "Blusa", "Sudadera", "Vestido", "Pantalon", "Falda", "Chaqueta", "Chaleco", "Leggings", "Bikini", "Americana", "Top", "Abrigo", "Cazadora", 
+  "Mono", "Kimono", "Zapatillas deportivas", "Sandalias", "Botas", "Zapatos de salón", "Zapatillas de casa", "Botas de agua",
+  "Botas de montaña", "Zapatillas", "Bailarinas", "Mocasines", "Zuecos", "Zapatos de plataforma", "Zapatillas de Paseo", "Botines", 
+  "Bolso de mano", "Bolso bandolera", "Mochila", "Cartera", "Bufanda", "Guantes", "Pañuelo", "Gorra", 
+  "Gafas de sol", "Reloj", "Pulsera", "Collar", "Sombrero", "Turbante", "Corbata", "Calcetines", "Pendientes", "Pulsera de tobillo", 
+  "Diadema", "Anillo", "Cinturon", "Tirantes", "Gemelos", "Medias"],
+  "generos": ["Mujer", "Hombre", "Unisex", "niño", "bebe"],
+  "estaciones": ["Primavera", "Verano", "Otoño", "Invierno", "Todo el año"],
+  "colores": ["Azul", "Blanca", "Blanco", "Negro", "Rojo", "Azul oscuro", "Verde", "Marrón", "Gris", "Rosa", "Amarillo", "Rojo", "Beige", "Multicolor", "Dorado", "Plateado", "Morado", "Cyan", "Antracita", "Turquesa", "Naranja", "Verde lima", "Granate", "Índigo", "Salmón", "Caqui", "Verde oliva", "Malva", "Lila", "Fucsia", "Coral", "Terracota", "Burdeos", "Mostaza", "Amarillo mostaza", "Ocre", "Aqua", "Azul cielo", "Azul marino", "Gris marengo", "Gris perla", "Blanco hueso", "Blanco roto", "Marfil", "Melocotón", "Menta", "Pistacho", "Salvia", "Gris oscuro", "Gris claro", "Rosa pastel", "Azul pastel", "Verde menta", "Beige claro", "Beige oscuro", "Azul petróleo", "Verde esmeralda", "Lavanda", "Amaranto", "Celeste", "Magenta", "Topo", "Jade", "Marengo", "Verde botella"],
+  "ocasion": ["Casual", "Cóctel", "Informal", "Ceremonia", "Fiesta", "Diario", "Elegante", "Trabajo", "Playa", "Viaje", "Noche", "Universidad"],
+  "caracteristicas": [
+      "Manga larga", "Manga corta", "Largo", "Corto", "Completo", "Tirantes", "Con flecos", "Elástico", "Ajustable", "Analógico", "Plegable", "Con borlas", "Transpirable", "Ajustable", "Amortiguada", "Alta tracción", "Técnico", "Resistente", "Plana", "Antideslizante", "Comodo",
+      "Impermeable", "Flexible", "Adaptable", "Ergonómico", "Liviano", "Reflector", "Absorbente", "Con refuerzos", "Acolchado", "Lavable", "Sin costuras", "Ignífugo", "Térmico"
+  ],
+  "estampados": ["Liso", "Estampado", "Geométrico", "Floral", "Animal print", "Camuflaje", "Abstracto", "Paisley", "Tie-dye", "Rayas", "Cuadros", "Chevron", "Difuminado", "Mosaico", "Polka dots", "Galáctico", "Azteca", "Etnico", "Militar", "Marítimo", "Tropical", "Botánico", "Vintage", "Artístico", "Retro", "Graffiti", "Digital", "Holográfico", "Psicodélico", "Shibori", "Doodle", "Batik", "Patchwork"],
+  "detalles": ["Con botones", "Transpirable", "Con capucha", "Con forro", "Con cremallera", "Con encaje", "Con cinturón", 
+  "Sin costuras", "Con cordón ajustable", "Con protección UV", "De Sastre", "Con tachuelas", "Con bolsillos laterales", 
+  "Con compartimentos internos", "Con visera", "Con montura gruesa", "Resistente al agua", "Ajustable", 
+  "Con piedras preciosas", "Con tiras ajustables", "Forradas", "Con puntera", "Entrenamiento", "Interior", "Senderismo", "Baloncesto", 
+  "Skateboarding", "Golf", "Verano", "Cremallera"],
+    "tipos_de_corte": [
+      "recto", "ajustado", "suelto", "acampanado", "entallado", "oversize", "evase", "asimetrico", "tubo"
+    ],
+    "tipos_de_cuello": [  "redondo", "en V", "polo", "cuello alto", "cuello barco", "cuello halter", "halter", "escote corazón", "bardot"
+    ],
+    "tipos_de_cintura": [
+      "alta", "media", "baja", "elastica", "fruncida", "cintura paperbag"
+    ],
+    "tipos_de_manga": [
+      "corta", "larga", "sin mangas", "tres cuartos", "manga murciélago", "manga globo", "manga farol", "manga mariposa", "manga kimono"
+    ],
+    "tipos_de_cierre": [
+      "botones", "cremallera", "cordones", "broche", "velcro", "corchete", "hebilla", "botón a presión", "nudo"
+    ],
+    "tipos_de_bolsillos": [
+      "con/sin bolsillos", "bolsillos laterales", "bolsillos traseros", "bolsillos en el pecho", "bolsillos internos", "bolsillos cargo", "bolsillo monedero", "bolsillos con solapa", "bolsillos ocultos"
+    ],
+    "tipos_de_suela_calzado": [
+      "plana", "tacón", "plataforma", "cuña", "suela de goma", "suela de madera", "suela antideslizante", "suela de corcho", "suela de esparto"
+    ],
+    "tipos_de_tacon_calzado": [
+      "stiletto", "cuña", "bloque", "kitten", "aguja", "plataforma", "tacón ancho", "tacón bajo", "tacón alto"
+    ],
+    "tipos_de_puntera_calzado": [
+      "redonda", "puntiaguda", "abierta", "cuadrada", "en almendra", "puntera reforzada", "puntera metálica", "puntera descubierta", "puntera texturizada"
+    ],
+    "tipos_de_gafas": [
+      "sol", "graduadas", "deportivas", "de lectura", "de seguridad", "de natación", "de realidad aumentada", "gafas de buceo", "gafas fotocromáticas"
+    ],
+    "tipos_de_joyeria": [
+      "pendientes", "anillos", "pulseras", "collares", "broches", "tobilleras", "colgantes", "relojes", "gemelos"
+    ],
+    "tipos_de_bolsos": [
+      "de mano", "bandolera", "mochila", "tote", "clutch", "hobo", "bolsa de playa", "bolsa de viaje", "riñonera"
+    ],
+    "tipos_de_sombreros": [
+      "gorra", "sombrero de ala", "boina", "fedora", "panamá", "cloché", "sombrero cowboy", "boina francesa", "sombrero bombín"
+    ],
+    "tipos_de_corbatas": [
+      "tradicional", "pajarita", "pañuelo de cuello", "corbata delgada", "ascot", "corbata reversible", "corbata estampada", "corbata tejida", "corbata estrecha"
+    ],
+    "material_del_forro": [
+      "algodón", "poliéster", "seda", "lana", "nylon", "viscosa", "rayón", "terciopelo", "satén"
+    ],
+    "material_del_relleno": [
+      "plumón", "poliéster", "algodón", "espuma", "lana", "fibra de bambú", "fibra de coco", "fibra de maíz", "gel de silicona"
+    ],
+    "transpirabilidad": [
+      "alta", "media", "baja", "ultra transpirable", "tejido ventilado", "tecnología Dry-Fit", "tecnología ClimaCool", "tejido perforado"
+    ],
+    "impermeabilidad": [
+      "impermeable", "resistente al agua", "no impermeable", "tecnología Gore-Tex", "tecnología AquaRepel", "revestimiento repelente al agua", "capa impermeable"
+    ],
+    "durabilidad": [
+      "alta", "media", "baja", "extremadamente durable", "resistente a la abrasión", "resistencia de larga duración", "resistencia al desgaste"
+    ],
+    "facilidad_de_cuidado": [
+      "lavable a máquina", "solo limpieza en seco", "lavable a mano", "sin planchado", "fácil mantenimiento", "tejido antiarrugas", "tejido de secado rápido"
+    ],
+    "resistencia_a_las_arrugas": [
+      "alta", "media", "baja", "arrugas mínimas", "no requiere planchado", "resistente a las arrugas", "tejido de fácil cuidado"
+    ],
+    "elasticidad": [
+      "elástico", "semi-elástico", "no elástico", "elasticidad multidireccional", "flexibilidad máxima", "ajuste adaptable"
+    ],
+    "suavidad": [
+      "muy suave", "suave", "medio", "duro", "toque aterciopelado", "textura sedosa", "sensación de algodón suave"
+    ],
+    "peso": [
+      "ligero", "medio", "pesado", "ultraligero", "ligereza extrema", "tejido ligero y cálido", "tejido pesado y cálido"
+    ],
+    "calidez": [
+      "alta", "media", "baja", "extremadamente cálido", "aislamiento térmico", "tecnología ThermoShield", "forro polar térmico"
+    ],
+    "resistencia_a_la_decoloracion": [
+      "alta", "media", "baja", "colores duraderos", "protección UV", "tejido resistente a la decoloración", "color permanente"
+    ],
+    "resistencia_al_encogimiento": [
+      "alta", "media", "baja", "mínimo encogimiento", "sin encogimiento", "tejido preencogido", "encogimiento controlado"
+    ],
+    "resistencia_a_la_pilling": [
+      "alta", "media", "baja", "tejido antipilling", "anti-bolitas", "prevención de pilling", "superficie lisa"
+    ],
+    "resistencia_a_la_abrasion": [
+      "alta", "media", "baja", "tejido resistente a la abrasión", "durabilidad extrema", "tejido anti desgarro", "resistencia al roce"
+    ],
+    "resistencia_a_los_rayos_uv": [
+      "alta", "media", "baja", "protección UV", "bloqueo de rayos solares", "tejido UV resistente", "protección solar integrada"
+    ],
+    "resistencia_al_fuego": [
+      "resistente al fuego", "no resistente al fuego", "ignífugo", "tejido ignífugo", "protección contra el fuego", "material retardante de llama", "seguridad contra incendios"
+    ],
+    "resistencia_a_las_manchas": [
+      "resistente a las manchas", "no resistente a las manchas", "tejido anti-manchas", "manchas invisibles", "protección contra manchas", "tejido fácil de limpiar"
+    ],
+    "resistencia_al_agua": [
+      "resistente al agua", "no resistente al agua", "tejido hidrófugo", "protección contra la humedad", "tejido repelente al agua", "impermeabilización avanzada"
+    ],
+    "resistencia_al_viento": [
+      "resistente al viento", "no resistente al viento", "tejido cortaviento", "protección contra el viento"],
+    "resistencia_a_los_olores": [
+    "resistente a los olores", "no resistente a los olores", "tecnología anti-olor", "prevención de olores", "control de olores", "neutralizador de olores", "tejido fresco", "anti-microbios", "antibacteriano"
+  ],
+  "resistencia_a_los_insectos": [
+    "resistente a los insectos", "no resistente a los insectos", "protección contra insectos", "anti-mosquitos", "tejido insecticida", "barrera anti-insectos", "protección al aire libre", "seguridad contra plagas"
+  ],
+  "resistencia_a_los_microbios": [
+    "resistente a los microbios", "no resistente a los microbios", "tecnología antimicrobiana", "protección contra microorganismos", "control de bacterias", "antivirus", "desinfección natural", "tejido hipoalergénico", "prevención de enfermedades"
+  ],
+  "biodegradabilidad": [
+    "biodegradable", "no biodegradable", "degradación natural", "ecológico", "material compostable", "reciclaje orgánico", "respetuoso con el medio ambiente", "ciclo de vida sostenible", "biomaterial"
+  ],
+  "reciclabilidad": [
+    "reciclable", "no reciclable", "sostenibilidad", "economía circular", "reutilizable", "reducción de residuos", "eco-friendly", "material renovable", "eco-conciencia"
+  ],
+  "origen_del_material": [
+    "natural", "sintético", "mixto", "fuentes renovables", "materia prima sostenible", "responsable ambientalmente", "procedencia ética", "sostenibilidad", "transparencia en la cadena de suministro"
+  ],
+  "certificaciones_ecologicas": [
+    "certificado orgánico", "certificado ecológico", "sin certificación", "estándares ambientales", "ecoetiquetas", "huella de carbono", "gestión forestal sostenible", "eco-certificación", "sello verde"
+  ],
+  "certificaciones_comercio_justo": [
+    "certificado de comercio justo", "sin certificación", "justicia social", "condiciones laborales éticas", "salarios dignos", "igualdad en el trabajo", "transparencia empresarial", "ética en la cadena de suministro", "respeto a los derechos humanos"
+  ],
+  "certificaciones_bienestar_animal": [
+    "certificado de bienestar animal", "sin certificación", "protección animal", "derechos de los animales", "cruelty-free", "libre de maltrato animal", "respeto por la fauna", "condiciones de vida animal", "seguridad animal"
+  ],
+  "certificaciones_condiciones_laborales": [
+    "certificado de condiciones laborales justas", "sin certificación", "derechos laborales", "trabajo digno", "seguridad laboral", "equidad en el trabajo", "protección del empleado", "cumplimiento de normativas laborales", "justicia laboral"
+  ],
+  "rangos_de_precio": [
+    "10-20","20-30","30-40","40-50","50-60","60-70","70-80","80-90","90-100","100-150","150-200","200-250","250-300","300-350","350-400","400-450","450-500"
+  ],
+  "marca": [
+    "Zara", "Mango", "Massimo Dutti", "Pull&Bear", "Bershka", "Stradivarius", "Desigual", "El Ganso", "Adolfo Domínguez", "Camper", "Pikolinos", "Gioseppo", "Castañer",
+    "Panama Jack", "Mustang", "Desigual", "H&M", "Uniqlo", "Nike", "Adidas", "Puma", "New Balance", "Reebok", "Converse", "Vans", "Dr. Martens", "Timberland", "Skechers",
+    "Clarks", "Crocs", "Tommy Hilfiger", "Calvin Klein", "Ralph Lauren", "Levi's", "Diesel", "Guess", "Michael Kors", "Coach", "Fossil", "Kate Spade", "Gucci",
+    "Prada", "Louis Vuitton", "Chanel", "Burberry", "Balenciaga", "Valentino", "Dior", "Hermès", "Givenchy", "Saint Laurent", "Versace", "Jimmy Choo", "Louboutin",
+    "Alexander McQueen", "Bottega Veneta", "Fendi", "Moschino", "Kenzo", "Paul Smith", "Tory Burch", "Marc Jacobs", "Swarovski", "Armani", "Max Mara", "Miu Miu",
+    "Moncler", "Salvatore Ferragamo", "Stella McCartney", "Thom Browne", "Tod's", "Yves Saint Laurent", "Zegna", "Brunello Cucinelli", "Rag & Bone", "Acne Studios",
+    "Isabel Marant", "Jacquemus", "Off-White", "Rick Owens", "Balmain", "Emilio Pucci", "Loewe", "Missoni", "Dries Van Noten", "Margiela", "Erdem", "Peter Pilotto",
+    "Simone Rocha", "Vetements", "Virgil Abloh", "A-Cold-Wall*", "Alyx", "Fear of God"
+  ],
+  "Marca Nacional": ["Si", "No"],
+  "pais_de_fabricacion": ["China", "India", "Bangladesh", "Vietnam", "Indonesia", "Turquía", "Pakistán", "México", "Brasil", "Colombia", "Perú", "Etiopía", "Italia", "España", "Portugal", "Polonia", "Rumania", "Ucrania", "Egipto", "Túnez",
+        "Corea del Sur", "Japón", "Estados Unidos", "Canadá", "Australia", "Nueva Zelanda", "Alemania", "Francia", "Reino Unido", "Países Bajos", "Bélgica", "Suiza", "Suecia", "Noruega", "Dinamarca", "Finlandia", "Rusia", "Israel", "Emiratos Árabes Unidos", "Arabia Saudita",
+        "Qatar", "Kuwait", "Sudáfrica", "Nigeria", "Kenia", "Ghana", "Argentina", "Chile", "Costa Rica", "Panamá", "República Dominicana", "Puerto Rico", "Cuba", "Guatemala", "Honduras", "Nicaragua", "El Salvador", "Ecuador", "Bolivia", "Paraguay",
+        "Uruguay", "Jamaica", "Trinidad y Tobago", "Barbados", "Haití", "Bahamas", "Fiyi", "Samoa", "Tonga", "Papúa Nueva Guinea", "Vanuatu", "Islas Salomón", "Mauricio", "Seychelles", "Madagascar", "Angola", "Mozambique", "Zambia", "Zimbabue", "Botswana",
+        "Namibia", "Uganda", "Ruanda", "Burundi", "Mali", "Senegal", "Togo", "Benín", "Níger", "Camerún"  ],
+  "garantia": ["garantía de por vida", "garantía limitada", "sin garantía"],
+  "politica_de_devoluciones": ["devoluciones gratuitas", "devoluciones pagadas", "sin devoluciones"],
+  "disponibilidad": ["en stock", "agotado", "pre-pedido"],
+  "tiempo_de_entrega": ["entrega inmediata", "entrega en 24 horas", "entrega en 3-5 días", "entrega en 1-2 semanas"],
+  "opciones_de_personalizacion": ["personalizable", "no personalizable"],
+  "instrucciones_de_cuidado": ["lavar a máquina", "lavar a mano", "limpiar en seco"],
+  "tipo_de_tela": ["tejido", "punto", "encaje", "cuero", "denim"],
+  "tipo_de_ajuste_ropa": ["ajustado", "regular", "suelto"],
+  "tipo_de_ajuste_calzado": ["ajustado", "regular", "amplio"],
+  "tipo_de_soporte_calzado": ["soporte de arco", "soporte de talón", "soporte de tobillo"],
+  "tipo_de_lente_gafas": ["polarizadas", "degradadas", "espejo", "transparentes"],
+  "tipo_de_montura_gafas": ["completa", "semi al aire", "al aire"],
+  "tipo_de_piedra_joyeria": ["diamante", "rubí", "esmeralda", "zafiro", "perla"],
+  "tipo_de_metal_joyeria": ["oro", "plata", "platino", "acero inoxidable"],
+  "tipo_de_cierre_joyeria": ["broche", "cierre de presión", "cierre de rosca"],
+  "tipo_de_asa_bolsos": ["asas cortas", "asas largas", "correa de hombro", "correa de cruzar"]}
