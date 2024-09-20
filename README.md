@@ -1,6 +1,6 @@
 # Chatbot de Recomendaciones de Moda usando Azure OpenAI y Chainlit
 
-Este proyecto fin de master implementa un chatbot de recomendaciones de moda personalizado, **MarIA**, utilizando Azure OpenAI, Chainlit y varios algoritmos de recomendación populares. El bot ayuda a los usuarios a encontrar artículos de ropa que se ajusten a su estilo y preferencias al proporcionar sugerencias basadas en las consultas de los usuarios. Soporta respuestas en streaming y utiliza la función de llamada de Azure OpenAI para obtener recomendaciones de moda.
+Este proyecto forma parte de nuestro Trabajo Fin de Máster en la Universidad de La Rioja, y ha sido desarrollado con fines educativos y de investigación.Este implementa un chatbot de recomendaciones de moda personalizado, **MarIA**, utilizando Azure OpenAI, Chainlit y varios algoritmos de recomendación populares. El bot ayuda a los usuarios a encontrar artículos de ropa que se ajusten a su estilo y preferencias al proporcionar sugerencias basadas en las consultas de los usuarios. Soporta respuestas en streaming y utiliza la función de llamada de Azure OpenAI para obtener recomendaciones de moda.
 
 ## Características
 
@@ -127,9 +127,12 @@ El sistema está optimizado para ofrecer recomendaciones de moda, pero puede ser
 
 ---
 
-## Recomendador Personalizado
+## Recomendador
 
-El proyecto utiliza un recomendador basado en grafos personalizado, **RP3betaRecommender**, para generar recomendaciones de moda basadas en datos de artículos preprocesados. Puedes actualizar la lógica del recomendador modificando los archivos `app.py` o `app_speech.py`.
+El proyecto utiliza un recomendador basado en grafos personalizado, **RP3betaRecommender**, para generar recomendaciones de moda basadas en datos de artículos preprocesados, el cual está basado 
+en el repositorio de Dressipi para la competición RecSys Challenge 2022, disponible en https://github.com/recsyspolimi/recsys-challenge-2022-dressipi
+
+Puedes actualizar la lógica del recomendador modificando los archivos `app.py` o `app_speech.py`.
 
 ## Personalización
 
@@ -137,6 +140,7 @@ El proyecto utiliza un recomendador basado en grafos personalizado, **RP3betaRec
 - **Añadir Nuevas Funciones**: Puedes añadir nuevas funciones en `app.py` o `app_speech.py` para manejar otros tipos de consultas o interacciones de los usuarios.
 
 ---
+
 
 # Fashion Recommendation Chatbot using Azure OpenAI and Chainlit
 
@@ -268,7 +272,7 @@ The system is optimized for offering fashion recommendations but can be **improv
 --- 
 
 
-## Custom Recommender
+## Recommender
 
 The project uses a custom graph-based recommender, **RP3betaRecommender**, to generate fashion recommendations based on preprocessed item data. You can update the recommender logic by modifying the `app.py` or `app_speech.py` files.
 
