@@ -1,6 +1,6 @@
 # Chatbot de Recomendaciones de Moda usando Azure OpenAI y Chainlit
 
-Este proyecto forma parte de nuestro Trabajo Fin de Máster en la Universidad de La Rioja, y ha sido desarrollado con fines educativos y de investigación.Este implementa un chatbot de recomendaciones de moda personalizado, **MarIA**, utilizando Azure OpenAI, Chainlit y varios algoritmos de recomendación populares. El bot ayuda a los usuarios a encontrar artículos de ropa que se ajusten a su estilo y preferencias al proporcionar sugerencias basadas en las consultas de los usuarios. Soporta respuestas en streaming y utiliza la función de llamada de Azure OpenAI para obtener recomendaciones de moda.
+Este proyecto forma parte de nuestro Trabajo Fin de Máster, y como tal ha sido desarrollado con fines educativos y de investigación. Este implementa un chatbot de recomendaciones de moda personalizado, **MarIA**, utilizando Azure OpenAI, Chainlit y varios algoritmos de recomendación populares. El bot ayuda a los usuarios a encontrar artículos de ropa que se ajusten a su estilo y preferencias al proporcionar sugerencias basadas en las consultas de los usuarios. Soporta respuestas en streaming y utiliza la función de llamada de Azure OpenAI para obtener recomendaciones de moda.
 
 ## Características
 
@@ -129,8 +129,7 @@ El sistema está optimizado para ofrecer recomendaciones de moda, pero puede ser
 
 ## Recomendador
 
-El proyecto utiliza un recomendador basado en grafos personalizado, **RP3betaRecommender**, para generar recomendaciones de moda basadas en datos de artículos preprocesados, el cual está basado 
-en el repositorio de Dressipi para la competición RecSys Challenge 2022, disponible en https://github.com/recsyspolimi/recsys-challenge-2022-dressipi
+Para la construcción del módulo de recomendación, se ha partido de tres de los modelos de referencia del trabajo https://dl.acm.org/doi/10.1145/3556702.3556829 de un grupo participante de la competición RecSys 2022 incorporando nuevas adaptaciones y trabajos específicos para los objetivos de este trabajo
 
 Puedes actualizar la lógica del recomendador modificando los archivos `app.py` o `app_speech.py`.
 
@@ -274,7 +273,7 @@ The system is optimized for offering fashion recommendations but can be **improv
 
 ## Recommender
 
-The project uses a custom graph-based recommender, **RP3betaRecommender**, to generate fashion recommendations based on preprocessed item data. You can update the recommender logic by modifying the `app.py` or `app_speech.py` files.
+For the construction of the recommendation module, we started from three reference models from the work https://dl.acm.org/doi/10.1145/3556702.3556829 by a participating group in the RecSys 2022 competition, incorporating new adaptations and specific developments to meet the objectives of this project. You can update the recommender logic by modifying the `app.py` or `app_speech.py` files.
 
 ## Customization
 
